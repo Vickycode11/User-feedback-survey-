@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h2>Survey Form</h2>
+
+  <form action="submit.html" method="post">
+    
+    <!-- Text input -->
+    <label for="name">Your Full Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <!-- Multiple choice (radio buttons) -->
+    <label>How did you hear about us?</label><br>
+    <input type="radio" name="source" value="friend"> Friend<br>
+    <input type="radio" name="source" value="social media"> Social Media<br>
+    <input type="radio" name="source" value="website"> Website<br><br>
+
+    <!-- Checkbox -->
+    <label>What features do you use?</label><br>
+    <input type="checkbox" name="features" value="chat"> Chat<br>
+    <input type="checkbox" name="features" value="support"> Support<br>
+    <input type="checkbox" name="features" value="updates"> Updates<br><br>
+
+    <!-- Short text -->
+    <label for="email">Email (optional):</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Textarea -->
+    <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Rating scale -->
+    <label>Rate our service (1 to 5):</label><br>
+    <input type="radio" name="rating" value="1"> 1
+    <input type="radio" name="rating" value="2"> 2
+    <input type="radio" name="rating" value="3"> 3
+    <input type="radio" name="rating" value="4"> 4
+    <input type="radio" name="rating" value="5"> 5<br><br>
+
+    <!-- Dropdown menu -->
+    <label for="category">Select a category:</label><br>
+    <select id="category" name="category">
+      <option value="">--Choose--</option>
+      <option value="feedback">Feedback</option>
+      <option value="bug">Report</option>
+      <option value="suggestion">Suggestion</option>
+    </select><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
